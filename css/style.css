@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+WAL+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor-fundo: black;
+    --cor-contraste: rgb(30,30, 30);
+    --cor-realce: #305CDE;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: white;
+}
+header{
+    text-align: center;
+    padding: 10px;
+    filter: invert(100);
+}
+header img{
+    max-width: 20%;
+}
+main{
+    background-color: var(--cor-contraste);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#titulo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--cor-realce);
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: var(--cor-fundo);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card figure img{
+    max-width: 100%;
+}
+.card button{
+    border: none;
+    width: 30%;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.card button:hover{
+    background-color: var(--cor-realce);
+    color: white;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+}
+article p{
+    margin: 10px;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+/* Ajustes para PC */
+
+@media (min-width: 1080px){
+    header img{
+        max-width: 10%;
+    }
+    main{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    section{
+        flex-direction: row;
+    }
+    .card{
+        width: 40%;
+    }
+    .card:hover{
+        scale: 1.1;
+        transition: 0.3s;
+    }
+}

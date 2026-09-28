@@ -21,6 +21,7 @@ header{
 }
 header img{
     max-width: 20%;
+    animation: logo 2s linear;
 }
 main{
     background-color: var(--cor-contraste);
@@ -28,6 +29,7 @@ main{
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
+    animation: principal 3s linear;
 }
 #titulo{
     font-family: "Montserrat", sans-serif;
@@ -110,5 +112,24 @@ article p{
     .card:hover{
         scale: 1.1;
         transition: 0.3s;
+    }
+}
+
+/* animações para a logo */
+
+@keyframes logo {
+    from{
+        filter: blur(15px);
+    }
+    to{
+        filter: blur(0px);
+    }
+}
+@keyframes principal{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
     }
 }

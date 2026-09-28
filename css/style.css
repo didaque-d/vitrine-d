@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+WAL+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --cor-fundo: black;
-    --cor-contraste: rgb(30,30, 30);
-    --cor-realce: #305CDE;
+    --cor-fundo: rgba(0, 0, 0, 0.503);
+    --cor-contraste: rgba(255, 255, 255, 0.2);
+    --cor-realce: rgb(254, 80, 80);
 }
 *{
     margin: 0;
@@ -12,6 +12,7 @@
 body{
     background-color: var(--cor-fundo);
     color: white;
+    background: linear-gradient(90deg, #1F0021, #751006);
 }
 header{
     text-align: center;
@@ -23,13 +24,15 @@ header img{
 }
 main{
     background-color: var(--cor-contraste);
+    backdrop-filter: blur(10px);
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
 }
 #titulo{
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 10px;
     color: var(--cor-realce);
@@ -93,6 +96,9 @@ article p{
     main{
         margin-left: 15%;
         margin-right: 15%;
+    }
+    #titulo{
+        font-size: 30px;
     }
     section{
         flex-direction: row;

@@ -65,10 +65,12 @@ section{
     margin-bottom: 10px;
     margin-top: 20px;
     font-weight: 600;
+    transition: 0.3s;
 }
 .card button:hover{
     background-color: var(--cor-realce);
     color: white;
+    transition: 0.3s;
 }
 footer{
     text-align: center;

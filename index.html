@@ -3,62 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Diego Alves | Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/DA-Logo.svg" alt=""></a>
+        <a href="index.html">
+            <img src="img/DA-Logo.svg" alt="Logo Diego Alves" class="logo">
+        </a>
     </header>
+
     <main>
-        <article>
-        <h1 id="titulo">Olá! Seja muito bem-vindo(a) ao meu portfólio.</h1>
-        <h2>Sobre mim</h2>
-        <p>Meu nome é <b>Diego</b> e é um grande prazer ter você por aqui. Sou apaixonado por tecnologia e fascinado por transformar ideias em soluções digitais funcionais, eficientes e elegantes.</p>
-        <h2>Meus estudos</h2>
-        <p>Atualmente, dedico meus estudos à área de Análise e Desenvolvimento de Sistemas, combinando fundamentos sólidos de ciência da computação com a prática diária no ecossistema do desenvolvimento web. Adoro aprender novas tecnologias, encarar desafios complexos de programação e criar aplicações que ofereçam uma excelente experiência para o usuário.</p>
-        <h2>Aproveite a navegação</h2>
-        <p>Fique à vontade para explorar meus projetos, conhecer um pouco mais do meu trabalho e acompanhar a minha evolução nessa jornada tecnológica. Se quiser trocar uma ideia, discutir novas oportunidades ou colaborar em algo incrível, vai ser um prazer conversar!</p>
-        <p>Obrigado pela visita e aproveite a navegação!</p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1 class="hero-titulo">Diego Alves da Silva</h1>
+            <p class="hero-subtitulo">Desenvolvedor Web & Estudante de Análise e Desenvolvimento de Sistemas</p>
+            <p class="hero-descricao">Transformando ideias em soluções digitais funcionais, eficientes e elegantes.</p>
+            <div class="hero-ctas">
+                <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                <a href="https://github.com/didaque-d" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM & ESTUDOS -->
+        <article class="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é <b>Diego</b> e é um grande prazer ter você por aqui. Sou apaixonado por tecnologia e fascinado por criar soluções digitais completas. Tenho foco constante em boas práticas de desenvolvimento e em oferecer uma excelente experiência ao usuário.</p>
+            
+            <h2>Formação & Estudos</h2>
+            <p>Atualmente, dedico meus estudos à área de <b>Análise e Desenvolvimento de Sistemas</b> (Estácio), combinando fundamentos sólidos de ciência da computação (como o curso <b>CS50</b> da edX/Harvard) com a prática diária no ecossistema de desenvolvimento web.</p>
         </article>
-        <section>
-            <div class="card">
-                <figure>
-                    <img src="img/planner.png" alt="">
-                </figure>
-                <article>
-                    <h2>Planner</h2>
-                    <p>Um web-app para gerenciar as minhas atividades docentes e analisar turmas.</p>
-                </article>
-                <a href="https://didaque-d.github.io/planner-t/"><button>Visualizar</button></a>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="img/rosarii.png" alt="">
-                </figure>
-                <article>
-                    <h2>Meditatio Rosarii</h2>
-                    <p>Um web-app para auxiliar na contemplação dos mistérios do Santo Rosário.</p>
-                </article>
-                <a href="https://didaque-d.github.io/rosarium-m/"><button>Visualizar</button></a>
+
+        <!-- TECNOLOGIAS & SKILLS -->
+        <section class="secao-skills">
+            <h2>Tecnologias & Ferramentas</h2>
+            <div class="skills-grid">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">JavaScript (ES6+)</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Python</span>
             </div>
         </section>
-        <section>
-            <div class="card">
-                <figure>
-                    <img src="img/eco-logo.png" alt="">
-                </figure>
-                <article>
-                    <h2>Eco Lógico</h2>
-                    <p>Uma landing page simples que trata sobre o meio ambiente.</p>
-                </article>
-                <a href="https://didaque-d.github.io/eco-logico/"><button>Visualizar</button></a>
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="secao-projetos">
+            <h2>Projetos em Destaque</h2>
+            <div class="projetos-grid">
+                
+                <div class="card">
+                    <figure>
+                        <img src="img/planner.png" alt="Preview do projeto Planner">
+                    </figure>
+                    <article>
+                        <h3>Planner</h3>
+                        <p>Um web-app para gerenciar minhas atividades docentes e analisar turmas.</p>
+                    </article>
+                    <a href="https://didaque-d.github.io/planner-t/" target="_blank" rel="noopener noreferrer" class="btn-card">Visualizar Projeto</a>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="img/rosarii.png" alt="Preview do projeto Meditatio Rosarii">
+                    </figure>
+                    <article>
+                        <h3>Meditatio Rosarii</h3>
+                        <p>Um web-app para auxiliar na contemplação dos mistérios do Santo Rosário.</p>
+                    </article>
+                    <a href="https://didaque-d.github.io/rosarium-m/" target="_blank" rel="noopener noreferrer" class="btn-card">Visualizar Projeto</a>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="img/eco-logo.png" alt="Preview do projeto Eco Lógico">
+                    </figure>
+                    <article>
+                        <h3>Eco Lógico</h3>
+                        <p>Uma landing page simples focada na conscientização sobre o meio ambiente.</p>
+                    </article>
+                    <a href="https://didaque-d.github.io/eco-logico/" target="_blank" rel="noopener noreferrer" class="btn-card">Visualizar Projeto</a>
+                </div>
+
             </div>
         </section>
-        <article>
-            <p>Mais em breve...</p>
+
+        <article class="em-breve">
+            <p>Novos projetos em desenvolvimento...</p>
         </article>
     </main>
-    <footer>Todos Os Direitos Reservados à Diego Alves da Silva &COPY;</footer>
+
+    <footer>
+        <p>Todos os Direitos Reservados a Diego Alves da Silva &copy;</p>
+    </footer>
 </body>
 </html>
